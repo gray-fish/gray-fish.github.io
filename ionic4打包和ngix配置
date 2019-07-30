@@ -1,0 +1,17 @@
+ionic4打包 ng run app:build --base-href=/edu/course/mobile
+压缩打包 ng run app:build:production --base-href=/edu/course/mobile
+其中--base-href=后面为在域名后面显示的路径，例如：域名 + /edu/course/mobile
+
+以下为ngix配置，mobile为打包出来的文件夹，可自行修改名称
+#课程中心手机端
+	location /edu/course/mobile{
+	    rewrite .* /index.html break;   指向展示的首页
+	    root /home/icampus3.0/front/mobile/;  资源存放路径
+        }	
+	location /edu/course{
+           alias /home/icampus3.0/front/mobile/; 加载对应的文件，不加的话刷新页面会报错，找不页面
+        }
+	
+	location /edu/lessons/mobile {  //重定向 访问 域名 + /edu/course/mobile也可以
+	   rewrite  / 域名 + /edu/course/mobile;
+	}
