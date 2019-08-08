@@ -3,8 +3,8 @@ const container = require('markdown-it-container')
 
 module.exports = {
   dest: 'vuepress',
-  title: "Finen",
-  description: 'Stay Hungry! Stay Foolish!',
+  title: "GrayFish",
+  description: 'GO GO BRO',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -63,10 +63,10 @@ module.exports = {
 
       // record
       '/blog/life-record/': genRecordSidebarConfig('生活随笔'),
-      
+
       '/project/': genPorjectSidebarConfig('项目记录'),
 
-       // java栏目
+      // java栏目
       '/blog/java/': genJavaArticle(),
 
       // python栏目
@@ -75,7 +75,7 @@ module.exports = {
   },
 }
 
-function genGitSidebarConfig (title) {
+function genGitSidebarConfig(title) {
   return [
     {
       title,
@@ -91,7 +91,7 @@ function genGitSidebarConfig (title) {
   ]
 }
 
-function genLinuxSidebarConfig (title) {
+function genLinuxSidebarConfig(title) {
   return [
     {
       title,
@@ -109,7 +109,7 @@ function genLinuxSidebarConfig (title) {
   ]
 }
 
-function genWheelSidebarConfig(title){
+function genWheelSidebarConfig(title) {
   return [
     {
       title,
@@ -121,7 +121,7 @@ function genWheelSidebarConfig(title){
   ]
 }
 
-function genOthersSidebarConfig (title) {
+function genOthersSidebarConfig(title) {
   return [
     {
       title,
@@ -134,7 +134,7 @@ function genOthersSidebarConfig (title) {
   ]
 }
 
-function genRecordSidebarConfig (title) {
+function genRecordSidebarConfig(title) {
   return [
     {
       title,
@@ -147,7 +147,7 @@ function genRecordSidebarConfig (title) {
   ]
 }
 
-function genPorjectSidebarConfig(title){
+function genPorjectSidebarConfig(title) {
   return [
     {
       title,
@@ -160,7 +160,7 @@ function genPorjectSidebarConfig(title){
   ]
 }
 
-function genFrontendConfig (title){
+function genFrontendConfig(title) {
   return [
     {
       title,
@@ -184,19 +184,19 @@ function genJavaArticle() {
     },
     {
       title: 'Spring',
-      children: [ 
-        
+      children: [
+
       ]
     },
     {
       title: 'SpringMVC',
-      children: [ 
-        
+      children: [
+
       ]
     },
     {
       title: 'SpringBoot',
-      children: [ 
+      children: [
         'springboot/spring-boot',
         'springboot/principle',
         'springboot/conf-file',
@@ -207,7 +207,7 @@ function genJavaArticle() {
     },
     {
       title: 'Mybatis',
-      children: [ 
+      children: [
         'mybatis/mybatis-param-process',
         'mybatis/mybatis-select',
         'mybatis/mybatis-dynamicSQL',
@@ -217,7 +217,7 @@ function genJavaArticle() {
   ]
 }
 
-function genPythonArticle(){
+function genPythonArticle() {
   return [
     {
       title: 'Python基础',
@@ -228,18 +228,18 @@ function genPythonArticle(){
     },
     {
       title: 'Python爬虫',
-      children: [ 
+      children: [
         'selenium-api-docs',
         'python-crawling-toutiao-picture'
       ]
     },
     {
       title: 'Python后端',
-      children: [ /* ... */ ]
+      children: [ /* ... */]
     },
     {
       title: 'Other',
-      children: [ /* ... */ ]
+      children: [ /* ... */]
     }]
-  
+
 }
