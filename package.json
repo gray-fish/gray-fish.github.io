@@ -1,4 +1,11 @@
 {
+  "name": "gray-fish-blog",
+  "version": "1.0.0",
+  "description": "Blog built by vuepress",
+  "repository": "git@github.com:gray-fish/gray-fish.github.io.git",
+  "author": "yixiu88 <yixiu88@outlook.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "yarn vuepress dev docs",
     "build": "yarn vuepress build docs",
