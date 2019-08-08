@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "yarn vuepress dev docs",
-    "build": "yarn vuepress build docs"
+    "build": "yarn vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.0.0-alpha.42",
