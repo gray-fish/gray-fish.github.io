@@ -1,23 +1,19 @@
 {
-  "name": "gray-blog",
+  "name": "yixiu-blog",
   "version": "1.0.0",
-  "description": "Static blog based on vuepress.",
-  "author": "yxiu",
+  "description": "Blog built by vuepress",
+  "main": "main.js",
+  "repository": "git@github.com:yueyang8389/yueyang.github.io.git",
+  "author": "yueyang8389 <yueyang8389@gmail.com>",
   "license": "MIT",
-  "repository": "git@github.com:gray-fish/gray-fish.github.io.git",
+  "private": true,
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.0.1",
-    "vuepress": "^0.14.8"
-  },
-  "dependencies": {
-    "element-ui": "^2.3.6",
-    "prismjs": "^1.14.0",
-    "vue": "^2.5.16"
+    "@vuepress/theme-blog": "^1.2.3",
+    "vuepress": "^1.0.3"
   }
 }

@@ -1,32 +1,48 @@
 module.exports = {
-  base: '/',
-  dest: './dist',
-  title: 'GRAY FISH BLOG',
-  description: 'GO GO BRO',
+  base: "/",
+  title: 'GrayFish',
+  description: 'This is a blog built by VuePress',
+  theme: "@vuepress/blog",
   themeConfig: {
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/#nav
+     */
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/' },
       {
-        text: '我的项目',
-        items: [
-          { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside' },
-          { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter' },
-        ]
-      }
+        text: '编程',
+        link: '/',
+      },
+      {
+        text: '归档',
+        link: '/tag/',
+      },
+      {
+        text: '关于',
+        link: '/about/',
+      },
     ],
-    sidebar: {
-      '/blog/': [
-        'git',
-        'vue-amap',
-        'js-function',
-        'vuepress-theme',
-        'vuepress',
-        'vue-business-component',
-        'stylus-converter',
-        'click-outside',
-        'json-server'
-      ]
-    }
-  }
+    /**
+     * Ref: https://vuepress-theme-blog.ulivz.com/#footer
+     */
+    footer: {
+      contact: [
+        {
+          type: 'github',
+          link: 'https://github.com/gray-fish',
+        },
+      ],
+      copyright: [
+        {
+          text: '夫唯不争，故天下莫能与之争',
+          link: '',
+        },
+        {
+          text: 'GrayFish © 2008-present ',
+          link: '',
+        },
+      ],
+    },
+
+    // paginationComponent: 'SimplePagination'
+  },
 }
